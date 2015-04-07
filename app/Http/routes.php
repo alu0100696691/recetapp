@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,16 +13,19 @@
 |
 */
 
-#Route::get('/', 'WelcomeController@index');
-
-Route::get('/', function()
-{
-   return View::make('hello');
-});
+Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
+
+Route::get('usuarios', array('uses' => 'UsuariosController@mostrarUsuarios'));
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+
+
+
+
