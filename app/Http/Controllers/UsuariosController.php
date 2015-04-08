@@ -1,8 +1,9 @@
-<?php
+<?php namespace App\Http\Controllers;
 
-use App\Models\usuarios as Usuario;
+use App\Http\Controllers\Controller;
+use App\Models\Usuario;
 
-class UsuariosController extends BaseController {
+class UsuariosController extends Controller {
  
     /**
      * Mustra la lista con todos los usuarios
@@ -14,7 +15,7 @@ class UsuariosController extends BaseController {
         // Con el método all() le estamos pidiendo al modelo de Usuario
         // que busque todos los registros contenidos en esa tabla y los devuelva en un Array
         
-        return View::make('usuarios.lista', array('usuarios' => $usuarios));
+        return \View::make('usuarios.lista', array('usuarios' => $usuarios));
         
         // El método make de la clase View indica cual vista vamos a mostrar al usuario
         //y también pasa como parámetro los datos que queramos pasar a la vista.
