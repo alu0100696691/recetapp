@@ -1,4 +1,8 @@
-<?php
+<?php 
+
+use App\Http\Controllers\Controller;
+use App\Models\Usuario;
+
 
 class UsuariosTest extends TestCase {
 
@@ -9,8 +13,10 @@ class UsuariosTest extends TestCase {
 	 */
 	public function testBasicExample()
 	{
-		$response = $this->call('GET', 'login');        	
-		$this->assertFalse($response->isOk());
+		
+		$response = $this->action('GET', 'HomeController@index');		
+		$this->assertEquals(302, $response->getStatusCode());
+					
 	}
 
 }
