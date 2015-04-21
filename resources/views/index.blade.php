@@ -75,7 +75,7 @@
                     <div class="slider">
                         <ul class="items">
                             <li>
-                                {{ HTML::image('img/images/slider-img1.jpg') }}
+                                <img {{ URL::to_asset('images/slider-img1.jpg') }}" alt="">
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -85,7 +85,7 @@
                                 </div>
                             </li>
                             <li>
-                                {{ HTML::image('img/images/slider-img2.jpg') }}
+                                <img {{ URL::to_asset('images/slider-img2.jpg') }}" alt="">
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -95,7 +95,7 @@
                                 </div>
                             </li>
                             <li>
-                                {{ HTML::image('img/images/slider-img3.jpg') }}
+                                <img {{ URL::to_asset('images/slider-img3.jpg') }}" alt="">
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -105,7 +105,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <a class="banner-2" href="#"') }}></a>
+                        <a class="banner-2" href="{{ url('#') }}"></a>
                     </div>
                     <ul class="pags">
                         <li><a href="{{ url('#') }}">1</a></li>
@@ -119,7 +119,7 @@
                                     <h3>Weight Loss Ideas</h3>
                                     <p>Good Cook is one of <a class="link" href="{{ url('http://blog.templatemonster.com/free-website-templates/') }}" target="_blank">free website templates</a> created by TemplateMonster.com team. This template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid.</p>
                                     <div class="relative">
-                                        <a class="button-2" href="#">Read More</a>
+                                        <a class="button-2" href="{{ url('#') }}">Read More</a>
                                     </div>
                                 </article>
                                 <article class="col-1">
