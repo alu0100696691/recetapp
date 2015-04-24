@@ -1,13 +1,13 @@
 @extends('layouts.default')
-
-	@section('content')
-	<div class="inner">
+ 
+@section('content')
+  <div class="inner">
             <div class="main">
                 <section id="content">
-                    <div class="slider">
+                     <div class="slider">
                         <ul class="items">
                             <li>
-                                <img {{ asset('images/slider-img1.jpg') }}" alt="">
+                                {{ asset('img/images/slider-img1.jpg') }}"
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -17,7 +17,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img {{ URL::to_asset('images/slider-img2.jpg') }}" alt="">
+                                {{ asset('images/slider-img2.jpg') }}
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -27,7 +27,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img {{ asset('images/slider-img3.jpg') }}" alt="">
+                                {{ asset('images/slider-img3.jpg') }}
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -39,7 +39,7 @@
                         </ul>
                         <a class="banner-2" href="{{ url('#') }}"></a>
                     </div>
-                    <ul class="pags">
+		    <ul class="pags">
                         <li><a href="{{ url('#') }}">1</a></li>
                         <li><a href="{{ url('#') }}">2</a></li>
                         <li><a href="{{ url('#') }}">3</a></li>
@@ -95,4 +95,4 @@
             </div>
         </div>
     </div>
-	@stop
+@stop
