@@ -3,7 +3,7 @@
         	<div class="top-row">
                 <div class="main">
                     <div class="wrapper">
-                        <h1><a href="{{ url('index.html') }}">GoodCook</a></h1>
+                        <h1><a href="{{ url('index.html') }}">Recetapp</a></h1>
                         <ul class="pagination">
                             <li class="current"><a href="{{ url('images/bg-img1.jpg') }}">1</a></li>
                             <li><a href="{{ url('images/bg-img2.jpg') }}">2</a></li>
@@ -30,4 +30,3 @@
                 </div>
             </div>
             <div class="ic">More Website Templates @ TemplateMonster.com - September 26, 2011!</div>
-    

@@ -28,9 +28,9 @@ class WelcomeController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function home()
 	{
-		return view('index');
+		return view('home');
 	}
 
 }

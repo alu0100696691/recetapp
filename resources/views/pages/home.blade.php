@@ -1,5 +1,5 @@
 @extends('layouts.default')
- 
+
 @section('content')
   <div class="inner">
             <div class="main">
@@ -7,7 +7,7 @@
                      <div class="slider">
                         <ul class="items">
                             <li>
-                                {{ asset('img/images/slider-img1.jpg') }}"
+                              <img src="{{ asset('/images/slider-img1.jpg') }}">
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -17,7 +17,7 @@
                                 </div>
                             </li>
                             <li>
-                                {{ asset('images/slider-img2.jpg') }}
+                              <img src="{{ asset('/images/slider-img2.jpg') }}">
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
@@ -27,7 +27,7 @@
                                 </div>
                             </li>
                             <li>
-                                {{ asset('images/slider-img3.jpg') }}
+                              <img src="{{ asset('/images/slider-img3.jpg') }}">
                                 <div class="banner">
                                     <strong class="title">
                                         <strong>Hot</strong><em>Recipe</em>
