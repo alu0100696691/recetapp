@@ -28,7 +28,7 @@ return [
 	|
 	*/
 
-	'model' => 'App\User',
+	'model' => 'App\Models\users',  //'App\User',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -58,10 +58,17 @@ return [
 	|
 	*/
 
+	'username' => 'username',//username a utilizar de la tabla users
+
+	'password' => 'password',//password a utilizar de la tabla users
+
+
+/*
 	'password' => [
 		'email' => 'emails.password',
 		'table' => 'password_resets',
 		'expire' => 60,
 	],
-
+	*/
+	
 ];

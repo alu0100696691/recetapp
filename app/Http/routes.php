@@ -23,6 +23,14 @@ Route::get('/', function()
     return view('pages.home');
 });
 
+// GET login
+Route::get('login', function() {
+  return View::make('login');
+});
+
+//POST login
+Route::post('login', 'AccountController@login');
+
 
 Route::get('usuarios', array('uses' => 'UsuariosController@mostrarUsuarios'));
 
@@ -30,9 +38,3 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-
-
-
-
-
-
