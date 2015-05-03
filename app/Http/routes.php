@@ -25,7 +25,7 @@ Route::get('/', function()
 
 // GET login
 Route::get('login', function() {
-  return View::make('login');
+  return view('pages.login');
 });
 
 //POST login
