@@ -8,7 +8,7 @@
     <h1>Login</h1>
     @if(Session::has('error'))
       <div class="alert-box success">
-        <h2>{{ Session::get('error') !!}</h2>
+        <h2>{!! Session::get('error') !!}</h2>
       </div>
     @endif
       <div class="controls">
