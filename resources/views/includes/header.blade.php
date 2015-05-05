@@ -18,9 +18,9 @@
                     <div class="main">
                         <nav>
                             <ul class="menu">
-                                <li><a class="active" href="{{ url('index.html') }}">Main</a></li>
+                                <li><a class="active" href="{{ url('/') }}">Main</a></li>
                                 <li><a href="{{ url('about.html') }}">About Us</a></li>
-                                <li><a href="{{ url('courses.html') }}">Courses</a></li>
+                                <li><a href="{{ url('/login') }}">Login</a></li>
                                 <li><a href="{{ url('recipes.html') }}">New Recipes</a></li>
                                 <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
                                 <li class="last"><a href="{{ url('contacts.html') }}">Contacts</a></li>
