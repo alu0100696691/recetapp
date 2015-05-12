@@ -15,11 +15,11 @@
               </div>
             @endif
               <div class="controls">
-              {!! Form::text('email','',array('id'=>'','class'=>'form-control span6','placeholder' => 'Please Enter your Email')) !!}
+              {!! Form::text('email','',array('id'=>'email','class'=>'form-control span6','placeholder' => 'Please Enter your Email')) !!}
               <p class="errors">{!!$errors->first('email')!!}</p>
               </div>
               <div class="controls">
-              {!! Form::password('password',array('class'=>'form-control span6', 'placeholder' => 'Please Enter your Password')) !!}
+              {!! Form::password('password',array('id'=>'password','class'=>'form-control span6', 'placeholder' => 'Please Enter your Password')) !!}
               <p class="errors">{!!$errors->first('password')!!}</p>
               </div>
 							<div class="checkbox">

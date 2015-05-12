@@ -32,9 +32,10 @@ Route::get('login', function() {
 Route::post('login', 'AccountController@login');
 
 
-Route::get('usuarios', array('uses' => 'UsuariosController@mostrarUsuarios'));
-
+#Route::get('usuarios', array('uses' => 'UsuariosController@mostrarUsuarios'));
+/*
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+*/

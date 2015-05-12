@@ -1,13 +1,18 @@
 <?php namespace App\Http\Controllers;
 
 use Session;
-use Auth;
+//use Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
+
 use Input;
-use App\Models\users;
+use App\Models\User;  //users;
+
 
 class AccountController extends Controller {
+
+
   public function login() {
     // Getting all post data
     $data = Input::all();
