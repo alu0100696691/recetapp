@@ -31,6 +31,12 @@ Route::get('login', function() {
 //POST login
 Route::post('login', 'AccountController@login');
 
+Route::get('logout', function() {
+  Auth::logout();
+  return view('pages.home');
+});
+
+
 
 #Route::get('usuarios', array('uses' => 'UsuariosController@mostrarUsuarios'));
 /*
