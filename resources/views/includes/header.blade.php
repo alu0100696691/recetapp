@@ -22,9 +22,17 @@
                                 <li><a href="{{ url('about.html') }}">About Us</a></li>
                                 <li><a href="{{ url('recipes.html') }}">Recipes</a></li>
                                 <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
-                                <li class="last"><a href="{{ url('/contact') }}">Contacts</a></li>
+                                <li><a href="{{ url('/contact') }}">Contacts</a></li>
                                 @if (Auth::check())
-                                  <li><a href="{{ url('/logout') }}">Logout</a></li>
+                                <li id="fat-menu" class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Cuenta <b class="caret"></b>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="#">Account</a></li>
+                                      <li><a href="{{ url('/logout') }}">Logout</a></li>
+                                  </ul>
+                                </li>
                                 @else
                                   <li><a href="{{ url('/login') }}">Login</a></li>
                                 @endif
