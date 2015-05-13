@@ -22,7 +22,7 @@
                                 <li><a href="{{ url('about.html') }}">About Us</a></li>
                                 <li><a href="{{ url('recipes.html') }}">Recipes</a></li>
                                 <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
-                                <li class="last"><a href="{{ url('contacts.html') }}">Contacts</a></li>
+                                <li class="last"><a href="{{ url('/contact') }}">Contacts</a></li>
                                 @if (Auth::check())
                                   <li><a href="{{ url('/logout') }}">Logout</a></li>
                                 @else

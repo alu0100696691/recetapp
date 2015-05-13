@@ -46,6 +46,10 @@ Route::get('register', function() {
   return view('pages.register');
 });
 
+Route::get('contact', 'ContactController@showForm');
+Route::post('contact', 'ContactController@handleFormPost');
+
+
 //Route::post('register', 'Auth\AuthController');
 
 
