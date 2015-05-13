@@ -23,7 +23,7 @@
                                 <li><a href="{{ url('recipes.html') }}">Recipes</a></li>
                                 <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
                                 <li><a href="{{ url('/contact') }}">Contacts</a></li>
-                                @if (Auth::check())
+                                @if (Auth::check())                                
                                 <li id="fat-menu" class="dropdown">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     Cuenta <b class="caret"></b>

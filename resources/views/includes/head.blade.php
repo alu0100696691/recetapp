@@ -19,7 +19,9 @@
     <script src="{{ URL::asset('js/tms_presets.js') }}" type="text/javascript"></script>
     <link  href="{{ url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('css/myStyle.css') }}" type="text/css" media="screen">
+    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.js') }}"></script>
     
+
     <!--[if lt IE 7]>
     <div style=' clear: both; text-align:center; position: relative;'>
         <a href="{{ url('http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode') }}">
