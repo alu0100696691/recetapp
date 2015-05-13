@@ -23,6 +23,11 @@ Route::get('/', function()
     return view('pages.home');
 });
 
+Route::get('home', function()
+{
+    return view('pages.home');
+});
+
 // GET login
 Route::get('login', function() {
   return view('pages.login');
@@ -37,11 +42,22 @@ Route::get('logout', function() {
 });
 
 
+Route::get('register', function() {
+  return view('pages.register');
+});
 
-#Route::get('usuarios', array('uses' => 'UsuariosController@mostrarUsuarios'));
+//Route::post('register', 'Auth\AuthController');
+
+
 /*
+Route::controllers([
+ 'register' => 'Auth\AuthController',
+ 'password' => 'Auth\PasswordController',
+]);
+*/
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-*/

@@ -29,6 +29,7 @@
 		        	</div>
               <p>{!! Form::submit('Login', array('class'=>'btn btn-lg btn-primary btn-block')) !!}</p>
           {!! Form::close() !!}
+					<a class="btn btn-lg btn-success btn-block" href="{{ url('/register') }}" role="button">Register</a>
         </div>
       </div>
     </div>
