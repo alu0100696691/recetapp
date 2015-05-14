@@ -19,9 +19,9 @@
                         <nav>
                           <ul class="nav nav-tabs menu">
                             <li><a class="active" href="{{ url('/') }}">Main</a></li>
-                            <li><a href="{{ url('about.html') }}">About Us</a></li>
+                            <li><a href="{{ url('/about') }}">About Us</a></li>
                             <li><a href="{{ url('/recipes') }}">Recipes</a></li>
-                            <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
+                            <li><a href="{{ url('/calendar') }}">Calendar</a></li>
                             <li><a href="{{ url('/contact') }}">Contacts</a></li>
                             @if (Auth::check())
                               <li>

@@ -54,6 +54,15 @@ Route::get('recipes', function()
     return view('pages.recipes');
 });
 
+Route::get('about', function()
+{
+    return view('pages.about');
+});
+
+Route::get('calendar', function()
+{
+    return view('pages.calendar');
+});
 
 
 Route::controllers([
