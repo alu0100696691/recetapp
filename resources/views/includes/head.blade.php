@@ -17,10 +17,14 @@
     <script src="{{ URL::asset('js/jquery.easing.1.3.js') }}" type="text/javascript"></script>
     <script src="{{ URL::asset('js/tms-0.3.js') }}" type="text/javascript"></script>
     <script src="{{ URL::asset('js/tms_presets.js') }}" type="text/javascript"></script>
-    <link  href="{{ url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- FontAwesome 4.3.0 -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons 2.0.0 -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ URL::asset('css/myStyle.css') }}" type="text/css" media="screen">
-    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.js') }}"></script>
-    
+    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
 
     <!--[if lt IE 7]>
     <div style=' clear: both; text-align:center; position: relative;'>
