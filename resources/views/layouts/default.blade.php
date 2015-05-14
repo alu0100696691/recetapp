@@ -3,21 +3,21 @@
 <head>
 	@include('includes.head')
 </head>
-<body id="page1">
+<body id="page4">
 <div id="bgSlider"></div>
     <div class="bg_spinner"></div>
-	<div class="extra">	
+	<div class="extra">
         <!--==============================header=================================-->
 <header>
-	@include('includes.header')   
-</header>    
+	@include('includes.header')
+</header>
         <!--==============================content================================-->
-        
+
 	@yield('content')
-    
+
 	<!--==============================footer=================================-->
 <footer>
-    	@include('includes.footer')   
+    	@include('includes.footer')
 </footer>
     <script type="text/javascript"> Cufon.now(); </script>
     <script type="text/javascript">
@@ -34,6 +34,6 @@
 			});
 		});
     </script>
-   
+
 </body>
 </html>
