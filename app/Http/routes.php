@@ -49,16 +49,11 @@ Route::get('register', function() {
 Route::get('contact', 'ContactController@showForm');
 Route::post('contact', 'ContactController@handleFormPost');
 
+Route::get('recipes', function()
+{
+    return view('pages.recipes');
+});
 
-//Route::post('register', 'Auth\AuthController');
-
-
-/*
-Route::controllers([
- 'register' => 'Auth\AuthController',
- 'password' => 'Auth\PasswordController',
-]);
-*/
 
 
 Route::controllers([
