@@ -17,26 +17,28 @@
                 <div class="menu-border">
                     <div class="main">
                         <nav>
-                            <ul class="menu">
-                                <li><a class="active" href="{{ url('/') }}">Main</a></li>
-                                <li><a href="{{ url('about.html') }}">About Us</a></li>
-                                <li><a href="{{ url('recipes.html') }}">Recipes</a></li>
-                                <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
-                                <li><a href="{{ url('/contact') }}">Contacts</a></li>
-                                @if (Auth::check())                                
-                                <li id="fat-menu" class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Cuenta <b class="caret"></b>
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li><a href="#">Account</a></li>
-                                      <li><a href="{{ url('/logout') }}">Logout</a></li>
+                          <ul class="nav nav-tabs menu">
+                            <li><a class="active" href="{{ url('/') }}">Main</a></li>
+                            <li><a href="{{ url('about.html') }}">About Us</a></li>
+                            <li><a href="{{ url('recipes.html') }}">Recipes</a></li>
+                            <li><a href="{{ url('calendar.html') }}">Calendar</a></li>
+                            <li><a href="{{ url('/contact') }}">Contacts</a></li>
+                            @if (Auth::check())
+                              <li>
+                                <div class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Configure</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url('/logout') }}">Logout</a></li>
                                   </ul>
-                                </li>
-                                @else
-                                  <li><a href="{{ url('/login') }}">Login</a></li>
-                                @endif
-                            </ul>
+                                </div>
+                              </li>
+                            @else
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            @endif
+                          </ul>
                         </nav>
                     </div>
                 </div>

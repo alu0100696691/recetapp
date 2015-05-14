@@ -10,7 +10,7 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#4c4c4c;min-
 	.bg .padding {padding:0 20px 0 39px;}
 
 .main {
-	width:980px; 	
+	width:980px;
 	padding:0;
 	margin:0 auto;
 	font-size:0.875em;
@@ -34,7 +34,7 @@ a:hover {text-decoration:none;}
 	width: 0;
 	height: 0;
 }
- 
+
 p {margin-bottom:18px;}
 .p1 {margin-bottom:8px;}
 .p2 {margin-bottom:15px;}
@@ -68,9 +68,9 @@ p {margin-bottom:18px;}
 .margin-bot {margin-bottom:35px;}
 .margin-top {margin-top:-5px}
 
-.img-indent {float:left; margin:0 20px 0px 0;}	
-.img-indent2 {float:left; margin:0 13px 0px 0;}	
-.img-indent-r {float:right; margin:0 0px 0px 40px;}	
+.img-indent {float:left; margin:0 20px 0px 0;}
+.img-indent2 {float:left; margin:0 13px 0px 0;}
+.img-indent-r {float:right; margin:0 0px 0px 40px;}
 
 .buttons a:hover {cursor:pointer;}
 
@@ -79,12 +79,12 @@ p {margin-bottom:18px;}
 .pagination li a,
 .link,
 .button-1, .button-2,
-h1 a {text-decoration:none;}	
+h1 a {text-decoration:none;}
 
 /*********************************header*************************************/
 header {
 	width:100%;
-	position:relative; 
+	position:relative;
 	z-index:2;
 }
 .top-row {
@@ -104,73 +104,74 @@ header {
 }
 
 h1 {
-	padding:0 0 0 40px; 
+	padding:0 0 0 40px;
 	float:left;
 }
 	h1 a {
-		display:block; 
+		display:block;
 		width:240px;
 		height:69px;
 		text-indent:-9999px;
 		background:url(../images/logo.png) 0 0 no-repeat;
 	}
-	
+
 /***** menu *****/
 .menu {
 	width:100%;
 	min-height:58px;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	background:url(../images/menu-spacer.gif) left top no-repeat;
 }
 .menu li {
-	float:left; 
+	float:left;
 	position:relative;
 	background:url(../images/menu-spacer.gif) right top no-repeat;
 }
 .menu li a {
-	display:block; 
+	display:block;
 	font-family: 'Adamina', serif;
-	font-size:20px; 
-	line-height:2.5em; 
+	font-size:20px;
+	line-height:2.5em;
 	letter-spacing:-1px;
-	padding:5px 44px 4px 40px; 
-	color:#000; 
+	padding:5px 44px 4px 40px;
+	color:#000;
 }
+
 .menu > li:first-child > a {padding:5px 44px 4px 45px;}
 .menu li.last a {padding:5px 47px 4px 40px;}
 .menu li a.active,
 .menu li a:hover {color:#ca4b00;}
 
 /*****BG-slider*****/
-.bg_spinner { 
-	width:100%; 
-	height:100%; 
-	position:fixed; 
-	z-index:9; 
+.bg_spinner {
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:9;
 	background:url(../images/loader.gif) 50% 50% no-repeat;
 }
-.pagination { 
-	float:right; 
+.pagination {
+	float:right;
 	padding:14px 40px 0 0;
 }
-	.pagination li { 
+	.pagination li {
 		float:left;
 		padding-left:5px;
 	}
-		.pagination li a { 
+		.pagination li a {
 			font-family:"Times New Roman", Times, serif;
 			font-style:italic;
 			font-weight:bold;
-			display:block; 
+			display:block;
 			background:url(../images/bg-slider-pagination.png) right top no-repeat;
-			width:35px; 
+			width:35px;
 			height:35px;
 			font-size:26px;
 			line-height:1.2em;
 			text-align:center;
 			color:#000;
 		}
-		.pagination a:hover, 
+		.pagination a:hover,
 		.pagination .current a {background-position:left top; color:#fff;}
 .bg-text {
 	display:block;
@@ -223,7 +224,7 @@ h1 {
 	top:-7px;
 	z-index:99;
 }
-		
+
 .pags {
 	position:absolute;
 	top:316px;
@@ -248,7 +249,7 @@ h1 {
 
 /*********************************content*************************************/
 #content {
-	width:100%; 
+	width:100%;
 	padding:30px 0 43px;
 	background:url(../images/content-tail.png) left top repeat;
 	position:relative;
@@ -258,8 +259,8 @@ h1 {
 
 h3 {
 	font-family: 'Adamina', serif;
-	font-size:24px; 
-	line-height:1.208em; 
+	font-size:24px;
+	line-height:1.208em;
 	font-weight:400;
 	margin-bottom:8px;
 	color:#000;
@@ -275,18 +276,18 @@ h4 {
 h6 {color:#4c4c4c;}
 
 .border-bot {
-	width:100%; 
-	padding-bottom:20px; 
+	width:100%;
+	padding-bottom:20px;
 	background:url(../images/pic-1.gif) 0 bottom repeat-x;
 }
 
 .button-1 {
-	display:inline-block; 
+	display:inline-block;
 	padding:0px 18px 2px;
 	font-family: 'Adamina', serif;
 	font-size:21px;
 	line-height:1.7em;
-	color:#ca4b00; 
+	color:#ca4b00;
 	border:1px solid #fff;
 	background:url(../images/button1-tail.gif) 0 0 repeat-x #e6e6e6;
 	box-shadow: 0px 2px 3px #888;
@@ -299,12 +300,12 @@ h6 {color:#4c4c4c;}
 .button-1:hover {background:#e6e6e6;}
 
 .button-2 {
-	display:inline-block; 
+	display:inline-block;
 	padding:0px 17px 3px;
 	font-family: 'Adamina', serif;
 	font-size:21px;
 	line-height:1.7em;
-	color:#fff; 
+	color:#fff;
 	background:url(../images/button2-tail.gif) 0 0 repeat-x #010101;
 	box-shadow: 0px 2px 3px #888;
 	-moz-box-shadow: 0px 2px 3px #888;
@@ -315,8 +316,8 @@ h6 {color:#4c4c4c;}
 
 .list-1 li {
 	font-size:14px;
-	line-height:24px; 
-	padding-left:20px; 
+	line-height:24px;
+	padding-left:20px;
 	background:url(../images/marker-1.png) 0 7px no-repeat;
 }
 	.list-1 li a {
@@ -325,59 +326,59 @@ h6 {color:#4c4c4c;}
 	}
 	.list-1 li a:hover {text-decoration:none;}
 
-.link:hover {text-decoration:underline;} 
+.link:hover {text-decoration:underline;}
 
 dl span {float:left; width:79px;}
 
 /***** contact form *****/
 #contact-form {display:block;}
 	#contact-form label {
-		display:block; 
-		height:30px; 
+		display:block;
+		height:30px;
 		overflow:hidden;
 	}
 	#contact-form input {
-		float:left; 
-		width:322px; 
-		font-size:12px; 
+		float:left;
+		width:322px;
+		font-size:12px;
 		line-height:1.25em;
 		color:#4c4c4c;
-		padding:4px 10px; 
-		margin:0; 
-		font-family:Arial, Helvetica, sans-serif; 
-		border:1px solid #dcddd9; 
+		padding:4px 10px;
+		margin:0;
+		font-family:Arial, Helvetica, sans-serif;
+		border:1px solid #dcddd9;
 		background:url(../images/bg-tail.png) 0 0 repeat;
 	}
 	#contact-form textarea {
 		float:left;
-		height:215px; 
-		width:522px; 
-		font-size:12px; 
+		height:215px;
+		width:522px;
+		font-size:12px;
 		line-height:1.25em;
 		color:#4c4c4c;
-		padding:4px 10px; 
-		margin:0; 
-		font-family:Arial, Helvetica, sans-serif; 
-		border:1px solid #dcddd9; 
+		padding:4px 10px;
+		margin:0;
+		font-family:Arial, Helvetica, sans-serif;
+		border:1px solid #dcddd9;
 		background:url(../images/bg-tail.png) 0 0 repeat;
 		overflow:auto;
 	}
 .text-form {
-	float:left; 
-	display:block; 
+	float:left;
+	display:block;
 	font-size:14px;
 	line-height:2em;
-	width:73px; 
+	width:73px;
 	color:#4c4c4c;
 	font-family:Arial, Helvetica, sans-serif;
 }
 
 .buttons {padding:20px 0 0 0; text-align:right;}
-.buttons a {margin-right:10px;}	
-		
+.buttons a {margin-right:10px;}
+
 /****************************footer************************/
 footer {
-	width:100%; 
+	width:100%;
 	height:105px;
 	background:url(../images/footer-tail.png) center top repeat;
 	position:relative;
@@ -385,7 +386,7 @@ footer {
 	z-index:99;
 }
 	footer .padding {padding:27px 0;}
-	
+
 .footer-text {
 	font-size:14px;
 	line-height:1.214em;
@@ -404,7 +405,7 @@ footer {
 	float:right;
 }
 	.list-services li {
-		float:left; 
+		float:left;
 		padding:0 5px 0 0;
 		font-family: 'Adamina', serif;
 		font-size:19px;
@@ -421,7 +422,7 @@ footer {
 		}
 		.list-services li.item-1 a {background-position:-40px 0;}
 		.list-services li.item-2 a {background-position:-80px 0;}
-		
+
 #easyTooltip{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -432,15 +433,15 @@ footer {
 	position:relative;
 	z-index:99;
 }
-	
+
 /*********extra***********/
 .block {height:105px;}
 .extra {
-	min-height:100%; 
-	height:auto !important; 
-	height:100%; 
-	margin: 0 auto -105px; 
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin: 0 auto -105px;
 	position:relative;
 	overflow:hidden;
-} 
+}
 html, body {height:100%;}
