@@ -66,6 +66,23 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase
         // crear un objeto del formulario
         $form = $this->byId( 'login' );
 
+        //Test de validación de datos con email incorrecto
+        $this->byName( 'email' )->value( 'tony' );
+        $this->byName( 'password' )->value( '123456' );
+
+        // submit el formulario
+        $form->submit();
+
+        // check si el formulario fue enviado
+        $success = $this->byId('alertEmail')->text();
+
+        // check el valor del mensaje alerta
+        $this->assertEquals( 'The email must be a valid email address.', $success );
+
+        $this->url('http://localhost/laravel/recetapp/public/login');
+
+        $form = $this->byId( 'login' );
+
         // llenar los campos del formulario
         $this->byName( 'email' )->value( 'tony@gmail.com' );
         $this->byName( 'password' )->value( '123456' );
