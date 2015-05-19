@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
+<title>CALENDAR</title>
 <div class="inner">
             <div class="main">
                 <section id="content">

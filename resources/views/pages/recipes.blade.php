@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
+<title>RECIPES</title>
 <div class="inner">
           <div class="main">
               <section id="content">

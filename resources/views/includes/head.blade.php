@@ -1,5 +1,5 @@
 
-    	<title>HOME</title>
+    	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}" type="text/javascript"></script>
@@ -34,7 +34,7 @@
     <script>
       $('.dropdown-toggle').dropdown()
     </script>
-  
+
 
     <!--[if lt IE 7]>
     <div style=' clear: both; text-align:center; position: relative;'>

@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
+<title>LOGIN</title>
 <br />
 <div class="container-fluid">
 	<div class="row">

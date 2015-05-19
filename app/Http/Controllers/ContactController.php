@@ -4,6 +4,8 @@ use Input;
 use Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
+use Session;
+use Flash;
 
 class ContactController extends Controller {
 
@@ -39,8 +41,11 @@ class ContactController extends Controller {
        $message->to('joseantoniorpc@gmail.com');
    });
 
-   // Specify a route to go to after the message is sent to provide the user feedback
-   return Redirect::to('/');
+   Session::flash('message', 'Mail sent to Recetapp!');
+   Session::flash('alert-class', 'alert-info');
+   return Redirect::to('contact');
+
+
   }
 }
 

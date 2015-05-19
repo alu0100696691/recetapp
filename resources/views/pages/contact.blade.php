@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
+<title>CONTACT</title>
   <div class="inner">
             <div class="main">
                 <section id="content">
@@ -12,11 +13,15 @@
                           <div class="panel-body">
                                <form id="contact" method="post" class="form" role="form">
                                 @if(Session::has('errors'))
-                                 <div class="alert alert-warning">
+                                 <div  class="alert alert-warning">
                                   @foreach(Session::get('errors')->all() as $error_message)
                                    <p>{{ $error_message }}</p>
                                   @endforeach
                                  </div>
+                                @endif
+
+                                @if(Session::has('message'))
+                                  <p class="alert {{ Session::get('alert-class') }}">{{ Session::get('message') }}</p>
                                 @endif
 
                                 <div class="row">
@@ -31,7 +36,7 @@
                                 <br>
                                 <div class="row">
                                  <div class="col-xs-12 col-md-12 form-group">
-                                  <button class="btn btn-primary pull-right" type="submit">Submit</button>
+                                  <button class="btn btn-primary pull-right" name="submit_button" type="submit">Submit</button>
                                  </div>
                                 </div>
                                </form>
