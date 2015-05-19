@@ -11,7 +11,7 @@
 				<div class="panel-body">
           {!! Form::open(array('url' => 'login', 'class' =>'form-signin', 'id' => 'login')) !!}
             @if(Session::has('error'))
-              <div class="alert-box success">
+              <div id="messageAlert" class="alert-box success">
                 <h2>{!! Session::get('error') !!}</h2>
               </div>
             @endif

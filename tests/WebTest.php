@@ -79,6 +79,26 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase
         // check el valor del mensaje alerta
         $this->assertEquals( 'The email must be a valid email address.', $success );
 
+        //Test el usuario no existe en la base de datos
+        $this->url('http://localhost/laravel/recetapp/public/login');
+
+        // crear un objeto del formulario
+        $form = $this->byId( 'login' );
+
+        //Test de validación de datos con email incorrecto
+        $this->byName( 'email' )->value( 'anonymous@gmail.com' );
+        $this->byName( 'password' )->value( '1111111' );
+
+        // submit el formulario
+        $form->submit();
+
+        // check si el formulario fue enviado
+        $success = $this->byId('messageAlert')->text();
+
+        // check el valor del mensaje alerta
+        $this->assertEquals( 'Something went wrong', $success );
+
+        //Test usuario correcto
         $this->url('http://localhost/laravel/recetapp/public/login');
 
         $form = $this->byId( 'login' );
