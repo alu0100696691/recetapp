@@ -43,4 +43,7 @@
                     </div>
                 </div>
             </div>
+            @if(Session::has('message'))
+              <p class="alert {{ Session::get('alert-class') }}">{{ Session::get('message') }}</p>
+            @endif
             <div class="ic">More Website Templates @ TemplateMonster.com - September 26, 2011!</div>

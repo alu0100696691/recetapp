@@ -9,7 +9,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Login</div>
 				<div class="panel-body">
-          {!! Form::open(array('url' => 'login', 'class' =>'form-signin')) !!}
+          {!! Form::open(array('url' => 'login', 'class' =>'form-signin', 'id' => 'login')) !!}
             @if(Session::has('error'))
               <div class="alert-box success">
                 <h2>{!! Session::get('error') !!}</h2>

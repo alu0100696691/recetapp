@@ -6,7 +6,7 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->setBrowser('firefox');
         $this->setBrowserUrl('http://localhost/laravel/recetapp/public/');
     }
-/*
+
     //Test para el correcto funcionamiento de los enlaces del menu
     public function testMenu()
     {
@@ -24,13 +24,6 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->assertEquals('LOGIN', $this->title());
     }
 
-    //Test login de usuarios
-    public function testLogin()
-    {
-        $this->url('http://localhost/laravel/recetapp/public/login');
-
-    }
-*/
     //Test pagina contacto
     public function testContact()
     {
@@ -63,6 +56,28 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase
       // check el valor del mensaje alerta
       $this->assertEquals( 'Mail sent to Recetapp!', $success );
 
+    }
+
+    //Test login de usuarios
+    public function testLogin()
+    {
+        $this->url('http://localhost/laravel/recetapp/public/login');
+
+        // crear un objeto del formulario
+        $form = $this->byId( 'login' );
+
+        // llenar los campos del formulario
+        $this->byName( 'email' )->value( 'tony@gmail.com' );
+        $this->byName( 'password' )->value( '123456' );
+
+        // submit el formulario
+        $form->submit();
+
+        // check si el formulario fue enviado
+        $success = $this->byCssSelector('p')->text();
+
+        // check el valor del mensaje alerta
+        $this->assertEquals( 'your login was successful!', $success );
 
     }
 

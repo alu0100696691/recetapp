@@ -34,7 +34,9 @@ class AccountController extends Controller {
       // doing login.
       if (Auth::validate($userdata)) {
         if (Auth::attempt($userdata)) {
-          return Redirect::intended('/');
+          Session::flash('message', 'your login was successful!');
+          Session::flash('alert-class', 'alert-info');
+          return Redirect::intended('login');
         }
       }
       else {
