@@ -5,9 +5,10 @@
   <div class="inner">
             <div class="main">
                 <section id="content">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-10 col-md-offset-1 ">
+                  <div class="indent">
+                    	<div class="wrapper">
+                        	<article class="col-1">
+                            	<div class="indent-left">
                         <div class="panel panel-default">
                           <div class="panel-heading">Contact</div>
                           <div class="panel-body">
@@ -36,12 +37,57 @@
                                 <br>
                                 <div class="row">
                                  <div class="col-xs-12 col-md-12 form-group">
-                                  <button class="btn btn-primary pull-right" name="submit_button" type="submit">Submit</button>
+                                  <button class="button-2" name="submit_button" onClick="document.getElementById('contact').reset()">Clear</button>
+                                  <button class="button-2" name="submit_button" type="submit">Send</button>
                                  </div>
                                 </div>
                                </form>
                              </div>
                            </div>
+                           <div class="bg">
+                                    <div class="padding">
+                                    	<h3>Miscellaneous Info</h3>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                    </div>
+                                </div>
+                         </article>
+                         <article class="col-2">
+                            	<h3 class="border-bot indent-bot">Our Contacts</h3>
+                                <div class="img-indent-bot">
+                                    <h6>USA</h6>
+                                    <dl>
+                                        <dt>8901 Marmora Road, Glasgow, D04</dt>
+                                        <dd><span>Telephone:</span>  +1 959 603 6035</dd>
+                                        <dd><span>FAX:</span>  +1 504 889 9898</dd>
+                                        <dd><span>E-mail:</span><a href="#">mail@thomsander.com</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="img-indent-bot">
+                                    <h6>Canada</h6>
+                                    <dl>
+                                        <dt>8901 Marmora Road, Glasgow, D04</dt>
+                                        <dd><span>Telephone:</span>  +1 959 603 6035</dd>
+                                        <dd><span>FAX:</span>  +1 504 889 9898</dd>
+                                        <dd><span>E-mail:</span><a href="#">mail@thomsander.com</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="img-indent-bot">
+                                    <h6>Great Britain</h6>
+                                    <dl>
+                                        <dt>8901 Marmora Road, Glasgow, D04</dt>
+                                        <dd><span>Telephone:</span>  +1 959 603 6035</dd>
+                                        <dd><span>FAX:</span>  +1 504 889 9898</dd>
+                                        <dd><span>E-mail:</span><a href="#">mail@thomsander.com</a></dd>
+                                    </dl>
+                                </div>
+                                <h6>Japan</h6>
+                                <dl>
+                                    <dt>8901 Marmora Road, Glasgow, D04</dt>
+                                    <dd><span>Telephone:</span>  +1 959 603 6035</dd>
+                                    <dd><span>FAX:</span>  +1 504 889 9898</dd>
+                                    <dd><span>E-mail:</span><a href="#">mail@thomsander.com</a></dd>
+                                </dl>
+                            </article>
                          </div>
                      </div>
                      <div class="row">

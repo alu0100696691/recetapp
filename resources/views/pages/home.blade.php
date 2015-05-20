@@ -86,7 +86,7 @@
                                     </ul>
                                 </article>
                                 <div class="extra-wrap">
-                                    <a href="{{ url('#') }}">{{ asset('img/images/banner-1.jpg') }}</a>
+                                    <a href="{{ url('#') }}"><img src="{{ asset('/images/banner-1.jpg') }}"></a>
                                 </div>
                             </div>
                         </div>
