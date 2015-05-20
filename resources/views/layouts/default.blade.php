@@ -3,7 +3,7 @@
 <head>
 	@include('includes.head')
 </head>
-<body id="page4">
+<body id="<?= $layout; ?>">
 <div id="bgSlider"></div>
     <div class="bg_spinner"></div>
 	<div class="extra">

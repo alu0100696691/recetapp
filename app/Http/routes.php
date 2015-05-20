@@ -20,17 +20,20 @@
 
 Route::get('/', function()
 {
-    return view('pages.home');
+    $layout = "page1";
+    return view('pages.home')->with('layout', $layout);
 });
 
 Route::get('home', function()
 {
-    return view('pages.home');
+  $layout = "page1";
+  return view('pages.home')->with('layout', $layout);
 });
 
 // GET login
 Route::get('login', function() {
-  return view('pages.login');
+  $layout = "page4";
+  return view('pages.login')->with('layout', $layout);
 });
 
 //POST login
@@ -38,12 +41,14 @@ Route::post('login', 'AccountController@login');
 
 Route::get('logout', function() {
   Auth::logout();
-  return view('pages.home');
+  $layout = "page1";
+  return view('pages.home')->with('layout', $layout);
 });
 
 
 Route::get('register', function() {
-  return view('pages.register');
+  $layout = "page4";
+  return view('pages.register')->with('layout', $layout);
 });
 
 Route::get('contact', 'ContactController@showForm');
@@ -51,17 +56,20 @@ Route::post('contact', 'ContactController@handleFormPost');
 
 Route::get('recipes', function()
 {
-    return view('pages.recipes');
+    $layout = "page4";
+    return view('pages.recipes')->with('layout', $layout);
 });
 
 Route::get('about', function()
 {
-    return view('pages.about');
+    $layout = "page2";
+    return view('pages.about')->with('layout', $layout);
 });
 
 Route::get('calendar', function()
 {
-    return view('pages.calendar');
+    $layout = "page5";
+    return view('pages.calendar')->with('layout', $layout);
 });
 
 

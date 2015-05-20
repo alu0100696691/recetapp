@@ -12,7 +12,8 @@ class ContactController extends Controller {
  // This function will show the view
  public function showForm()
  {
-  return view('pages.contact');
+  $layout = "page4";
+  return view('pages.contact')->with('layout', $layout);
  }
 
  public function handleFormPost()
