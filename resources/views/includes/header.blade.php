@@ -20,7 +20,19 @@
                           <ul class="nav nav-tabs menu">
                             <li><a class="active" href="{{ url('/') }}">Main</a></li>
                             <li><a href="{{ url('/about') }}">About Us</a></li>
-                            <li><a href="{{ url('/recipes') }}">Recipes</a></li>
+
+                            @if (Auth::check())
+                              <li>
+                                <div class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <b class="caret"></b></a>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url('/recipes') }}">Recipes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url('/newrecipes') }}">New Recipes</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            @endif
+
                             <li><a href="{{ url('/calendar') }}">Calendar</a></li>
                             <li><a href="{{ url('/contact') }}">Contacts</a></li>
                             @if (Auth::check())

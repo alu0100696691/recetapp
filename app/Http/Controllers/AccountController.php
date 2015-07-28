@@ -36,7 +36,7 @@ class AccountController extends Controller {
         if (Auth::attempt($userdata)) {
           Session::flash('message', 'your login was successful!');
           Session::flash('alert-class', 'alert-info');
-          return Redirect::intended('login');
+          return Redirect::intended('recipes');
         }
       }
       else {

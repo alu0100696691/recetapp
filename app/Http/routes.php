@@ -54,11 +54,17 @@ Route::get('register', function() {
 Route::get('contact', 'ContactController@showForm');
 Route::post('contact', 'ContactController@handleFormPost');
 
-Route::get('recipes', function()
+Route::get('recipes', ['middleware' => 'auth',function()
 {
     $layout = "page4";
     return view('pages.recipes')->with('layout', $layout);
-});
+}]);
+
+Route::get('newrecipes', ['middleware' => 'auth',function()
+{
+    $layout = "page4";
+    return view('pages.newrecipes')->with('layout', $layout);
+}]);
 
 Route::get('about', function()
 {
