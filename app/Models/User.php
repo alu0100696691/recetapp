@@ -31,4 +31,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+	public function recetas() {
+			return $this->belongsToMany('Receta', 'usuarioReceta', 'users_id', 'receta_id');
+	}
+
 }
