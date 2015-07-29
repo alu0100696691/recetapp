@@ -65,6 +65,7 @@ Route::get('newrecipes', ['middleware' => 'auth',function()
     $layout = "page4";
     return view('pages.newrecipes')->with('layout', $layout);
 }]);
+Route::post('newrecipes', 'NewRecipesController@postSave');
 
 Route::get('about', function()
 {

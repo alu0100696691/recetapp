@@ -7,7 +7,18 @@
               <section id="content">
                   <div class="indent">
                     <div class="wrapper">
-                      {!! Form::open(array('url' => 'login', 'class' =>'form-signin', 'id' => 'receta','enctype' => 'multipart/form-data')) !!}
+                      {!! Form::open(array('url' => 'newrecipes', 'class' =>'form-signin', 'id' => 'receta','enctype' => 'multipart/form-data')) !!}
+                        @if(Session::has('errors'))
+                         <div  class="alert alert-warning">
+                          @foreach(Session::get('errors')->all() as $error_message)
+                           <p>{{ $error_message }}</p>
+                          @endforeach
+                         </div>
+                        @endif
+
+                        @if(Session::has('message'))
+                          <p class="alert {{ Session::get('alert-class') }}">{{ Session::get('message') }}</p>
+                        @endif
                         <table id="tabla" class="table table-striped table-bordered">
                           <tr class="fila-base">
                             <td><div class="extra-wrap">
